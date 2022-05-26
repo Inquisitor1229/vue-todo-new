@@ -1,24 +1,14 @@
 # vue-todo
+Сделаны все пункты из задания, кроме возможности менять задачи местами (Нужная библиотека подключена, банально не хватило времени доделать).
 
-## Project setup
-```
-npm install
-```
+Подключил ESLint и Prettier.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Если проект был бы больше, стоило бы подключить SASS, так легче контролировать стили.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Т.к. проект выложен на github pages, сохранение задач производится в localstorage. Не мешало бы сделать сохранения в какой-нибудь БД.
 
-### Lints and fixes files
-```
-npm run lint
-```
+Методы фильтров можно было бы сделать одним с условиями, некоторые компоненты больше раздробить на более мелкие, но на данном проекте я думаю это избыточно.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Ссылка на проект онлайн: https://inquisitor1229.github.io/vue-todo-prod/
+
+На работу ушло примерно 8 часов

@@ -1,0 +1,284 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background:
+        linear-gradient(303.79deg, #F0C3FC -53.74%, #D7BEFC -4.64%, #BCB1FC 40.96%, #A1AEFC 83.05%, #94BDFC 127.47%, #8EC5FC 170.73%),
+        linear-gradient(0deg, #84FAB0 0%, #85F9BC 21.87%, #88F8D7 42.19%, #8BF6F5 60.94%, #8EDDF5 80.73%, #8FD3F4 100%);
+}
+
+body, h1, h2, h3, h4, h5, p, ul, ol, fieldset, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+html, body, #app, main {
+    height: 100%;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    max-width: 730px;
+    width: 100%;
+    max-height: 720px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 24px;
+    background-color: #fff;
+}
+
+.todo__container {
+    height: 100%;
+    padding: 32px 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.todo__logo-container {
+    margin-bottom: 48px;
+}
+
+.todo__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #202427;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.task-input__add {
+    padding: 12px 16px;
+    background: #2578F4;
+    border-radius: 8px;
+    margin-left: 16px;
+    color: #fff;
+}
+
+.task-input__title {
+    max-width: 320px;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #C7CCD1;
+    border-radius: 8px;
+}
+
+.task-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-left: -24px;
+}
+
+.task-card:hover .task-card__move-element {
+    visibility: visible;
+}
+
+.task-card__move-element {
+    visibility: hidden;
+    display: flex;
+    margin-right: 8px;
+}
+
+.task-card__text {
+    max-width: 310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-card__text--done {
+    opacity: 0.5;
+}
+
+.task-card__options {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.task-card__options-button:first-child {
+    margin-right: 16px;
+}
+
+.task-card__status {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+.task-list {
+    height: 85px;
+    margin-bottom: 32px;
+    margin-right: -16px;
+    padding-right: 16px;
+    margin-left: -24px;
+    padding-left: 24px;
+    overflow-y: auto;
+}
+
+.task-list::-webkit-scrollbar {
+    background: transparent;
+    width: 4px;
+}
+
+.task-list::-webkit-scrollbar-track {
+    margin-left: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background: rgba(32, 36, 39, 0.1);
+    border-radius: 8px;
+}
+
+.task-progress {
+    margin-bottom: 32px;
+}
+
+.task-progress__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-progress__card {
+    padding: 16px;
+    background: rgba(32, 36, 39, 0.05);
+    border-radius: 8px;
+}
+
+.task-progress__card-count {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202427;
+    opacity: 0.5;
+}
+
+.task-progress__card-heading {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #202427;
+}
+
+.task-progress__card-progressbar {
+    width: 158px;
+    height: 4px;
+}
+
+.progressbar {
+    background: #E5E5E6;
+    border-radius: 8px;
+}
+
+.progressbar__value {
+    height: 4px;
+    border-radius: 8px;
+}
+
+.progressbar__value--completed {
+    background: #5D5FEF;
+}
+
+.progressbar__value--not-completed {
+    background: #EF5DA8;
+}
+
+.task-filter {
+    display: flex;
+}
+
+.task-filter__item {
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #202427;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task-filter__radio:checked + .task-filter__item {
+    background: #2578F4;
+    color: #fff;
+}
+
+.todo__footer {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.todo-footer__container {
+    display: flex;
+    align-items: center;
+}
+
+.todo-footer__image {
+    margin-right: 8px;
+}
+
+.todo-footer__description {
+    font-size: 14px;
+    line-height: 16px;
+}
